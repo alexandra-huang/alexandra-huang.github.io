@@ -8,6 +8,10 @@ body {
   h1 {
   	font-size: 2rem;
   }
+  .resumeFile{
+    margin-left: 2rem!important;
+    margin-right: auto!important;
+  }
 }
 
 .mdslider {
@@ -15,6 +19,14 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+/** center the resume button on ABOUT */
+.resumeFile {
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+
 
 /* make heading text darker gray */
 h1,
