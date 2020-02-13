@@ -1,0 +1,349 @@
+/* my css */
+body {
+  color: #6a6a6e !important;
+}
+
+/* shrink h1 font size for small screens */
+@media only screen and (max-width: 600px) {
+  h1 {
+  	font-size: 2rem;
+  }
+}
+
+.mdslider {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* make heading text darker gray */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 1rem;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #444;
+}
+
+/* blockquote formatting */
+.blockquote {
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  margin-left: 0rem;
+  font-size: 1rem;
+  /* pinegreen version border-left: 5px solid #01796f; */
+  border-left: 5px solid #40e0d0;
+}
+
+ul {
+  margin-bottom: 0.5rem !important;
+}
+
+.proj-body {
+  margin-bottom: 1rem!important;
+}
+
+.proj-body.link {
+  /*color: #3366BB;*/
+  margin-top: -2rem;
+  text-align: center;
+}
+
+.proj-body-list {
+  margin-bottom: 1rem!important;
+}
+
+/* overriding default gray body text to a darker gray */
+.content-column-content p,
+.content-column-content li {
+  color: #6a6a6e;
+}
+
+.content-column-content h3 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.content-column-content h4, h5 {
+  margin-bottom: 1rem !important;
+}
+
+.content-column-content h4 {
+  /*color: #01796f;*/
+  /*color: #016058;*/
+  color: #708090;
+}
+
+.content-column-content h5 {
+  margin-top: 2rem;
+}
+
+.content-column-content h5 {
+  color: #8b98a5;
+}
+
+.rf-list,
+.ed-list {
+  margin-top: -1rem !important;
+  margin-bottom: 2rem !important;
+}
+
+.sidebar-p {
+  color: #6a6a6e;
+  font-size: 0.875;
+}
+
+/* overriding default gray project card text to a darker gray */
+.box-masonry .box-masonry-text p {
+  color: #6a6a6e;
+  font-size: 0.95rem;
+}
+
+.box-masonry .box-masonry-text h4 {
+  margin-bottom: 0.5rem;
+}
+
+
+/* Image formatting below */
+/**************************/
+
+.img2 {
+  max-width: 100%;
+  max-height: auto;
+}
+
+/* iterated sketch thumbnail */
+.img3 {
+  max-width: 100%;
+  max-height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgG {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* matchdog hero image at top */
+.img3-hero {
+  max-width: 100%;
+  max-height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img4 {
+  max-width: 100%;
+  max-height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*outline-style: solid;
+  outline-color: #999;
+  outline-width: 1px;*/
+}
+
+.persona {
+  max-height: 170px;
+}
+
+/* Expand thumbnail */
+.thumbnail {
+  max-width: 100%;
+}
+
+.thumbnail:hover, .img3:hover, .imgG:hover {
+  opacity: 0.7;
+}
+
+.obj-attr {
+  max-height: 600px;
+  max-width: 100%;
+}
+
+.italic { font-style: italic; }
+.small { font-size: 0.8em; }
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 2%;
+}
+
+.lightbox:target {
+  /** Remove default browser outline */
+  outline: none;
+
+  /** Unhide lightbox **/
+  display: block;
+}
+
+.finalscreen{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.final, .final2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.caption {
+  text-align: center;
+}
+
+/* centers the matchdog preview image on the tile on home page */
+.centerimg {
+  display: block;
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+
+/*@media only screen and (min-width: 400px) {
+  .final {
+    margin-left: auto;
+    margin-right: 2rem;
+  }
+}
+@media only screen and (min-width: 400px) {
+  .final2 {
+    margin-right: auto;
+  }
+}*/
+
+
+/*.img:target {
+  max-width: 150%;
+}
+.img:target+.close {
+    display: block;
+}
+.img:target+.close+.expand {
+    display: none;
+}
+.close {
+        background-image: url("../bootstrap-icons/icons/x.svg");
+        background-repeat: no-repeat;
+        bottom: 418px;
+        display: none;
+        height: 32px;
+        left: 462px;
+        margin-top: -32px;  
+        position: relative;
+        width: 32px;
+    }
+    .expand{
+        bottom: 125px;
+        margin-left: -32px;
+        margin-right: 16px;
+        pointer-events: none;
+        position: relative;
+    }
+
+#wrapper {
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+        width: auto;
+    }*/
+
+/*.nextPreviousButtons {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}*/
+
+/* remove the '>' from the list item for next and prev buttons */
+.content-column-content nav ul li:before {
+  font-family: 'FontAwesome';
+  content: '';
+  margin: 0 0.85rem 0 -0.9375rem;
+  /*color: #01796f;*/
+  color: #40e0d0;
+}
+
+/* next and previous buttons formatting and color */
+.page-link {
+  /*color: #01796f;*/
+  color: #40e0d0;
+  background-color: transparent;
+  background-image: none;
+  /*border-color: #01796f;*/
+  border-color: #40e0d0;
+  border-radius: 0 !important;
+}
+
+.page-link:hover {
+  color: #fff;
+  /*background-color: #01796f;
+  border-color: #01796f;*/
+  background-color: #40e0d0;
+  border-color: #40e0d0;
+}
+
+/* about page h4 header color */
+/*h4.abt {
+  /*color: #708090;
+  color: #01796f;
+}*/
+
+
+
+
+
+/* to change the on hover image/icon */
+/*.box-masonry .box-masonry-image.with-hover-icon:after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-family: 'FontAwesome';
+  content: '\f105';
+  text-align: center;
+  font-size: 3.125rem;
+  color: #555;
+}*/
+
